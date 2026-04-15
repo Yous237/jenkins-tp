@@ -1,0 +1,19 @@
+pipeline {
+    agent any 
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Mansour en cours...'
+              checkout scm
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'commande en cours...'
+                 sh 'ls -la'
+            }
+        }
+        
+    }
+}
